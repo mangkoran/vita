@@ -58,17 +58,17 @@
 #+LINKEDIN: mangkoran
 
 #+latex: \begin{cvparagraph}
-I am an undergraduate currently studying Computer Network and Security. I am highly interested in the field of DevOps Engineering and Cloud Native Computing . I have experience working with remote teams in an organization projects. I posses a strong combination of team working, problem solving, technical skills, and curiosity with good communication abilities.
-
+I am an undergraduate currently studying Computer Network and Security. I am highly interested in the field of cloud native computing and CI/CD pipeline development and maintenance. I have experience working with remote teams in Game Development field. I posses a strong combination of team working, problem solving, inquisitiveness, and technical skills along with great communication abilities.
 #+latex: \end{cvparagraph}
+
 * Key skills
 :PROPERTIES:
 :CV_ENV:   cvskills
 :END:
 
-- Systems and Development :: Unix/Linux systems engineering and administration, software development, configuration management, CI/CD pipeline development.
 - Cloud Native Computing :: AWS and GCP architecture and infrastructure development, Kubernetes administration and monitoring.
-- Programming Languages and Libraries :: Golang, Rust, C/C++, JavaScript/TypeScript (React, Next.js, Express, Node), Elisp
+- Systems and Development :: Unix/Linux systems engineering and administration, software development, configuration management, CI/CD pipeline development.
+- Programming Languages and Libraries :: Golang, Rust, Python, C/C++, JavaScript/TypeScript (React, Next, Express, Node), Elisp
 
 * Experience
 :PROPERTIES:
@@ -80,22 +80,42 @@ I am an undergraduate currently studying Computer Network and Security. I am hig
 :CV_ENV: cvemployer
 :FROM:     <2022-08-16>
 :TO:     <2023-02-15>
-:LOCATION: Indonesia
+:LOCATION: Indonesia (remote)
 :END:
 
-*** Junior Site Reliability Engineer Intern - LiveOps
+*** LiveOps - Junior Site Reliability Engineer Intern
 :PROPERTIES:
 :CV_ENV:   cvsubentry
 :FROM:     <2022-08-16>
 :TO:     <2023-02-15>
 :END:
 
-- Troubleshooted and resolved technical issues in real-time.
-- Supported the deployment and testing of new releases and updates.
+- Developed and maintained CI release pipeline using GitLab and Jenkins.
 - Participated in incident post-mortems and continuous improvement activities.
+- Investigated and resolved technical issues of Kubernetes clusters in real-time.
 - Participated in on-call rotation and became available for off-hours support as needed.
-- Monitored and maintained the performance and availability of live systems and services.
-- Managed incidents and escalations, including communication with internal stakeholders.
+- Monitored and maintained the performance and availability of live systems and services using Prometheus and Grafana.
+- Addressed incidents and escalations using Opsgenie, Jira, and Slack, including communication with internal stakeholders.
+
+** [[https://ppi.id/][Overseas Indonesian Students' Association Alliance]] (PPI Dunia)
+:PROPERTIES:
+:CV_ENV: cvemployer
+:FROM:     <2021-10-01>
+:TO:     <2022-06-01>
+:LOCATION: Indonesia (remote)
+:END:
+
+*** PPID Edufest - DevOps and Infrastructure Engineer
+:PROPERTIES:
+:CV_ENV:   cvsubentry
+:FROM:     <2021-10-01>
+:TO:     <2022-06-01>
+:END:
+
+- Implemented and Integrated container- and microservice-based architectural approach to PPID Edufest website.
+- Decoupled and containerized PPID Edufest website into microservices.
+- Deployed and managed application on DigitalOcean infrastructure.
+- Built and managed CI/CD pipeline using CircleCI.
 
 * Education
 :PROPERTIES:
