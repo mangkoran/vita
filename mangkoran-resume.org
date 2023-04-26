@@ -1,0 +1,134 @@
+# source: https://github.com/zzamboni/vita
+
+:CV_CONFIG:
+
+# AwesomeCV and LaTeX configuration section
+
+# AwesomeCV configuration options
+# #+photo: ./images/afiq.png
+#+photostyle: right,noedge
+#+cvcolor: catppuccin-overlay0
+#+cvhighlights: false
+#+cvcolorizelinks: catppuccin-blue
+#+cvunderlinelinks: false
+#+cvfooter_left: \today\\~
+#+cvfooter_right: %a\\\textup{\tiny https://github.com/mangkoran/vita}
+# #+cvfooter_right: \thepage\\~
+
+# These options are useful for HTML or ASCII export, and harmless for
+# AwesomeCV, so I leave them on all the time
+#+options: num:1
+#+options: prop:("FROM" "TO" "LOCATION" "EMPLOYER" "SCHOOL" "ORGANIZATION" "DATE" "POSITION" "LABEL")
+#+options: toc:nil
+
+# LaTeX options
+
+#+latex_class_options: [12pt,a4paper]
+
+# Macro for bibliographical citations
+#+macro: cvcite \cite{$1}
+
+# Commands for including the Publications list using biblatex
+# defernumbers=true makes the "Publications" section label the entries
+# consecutively, instead of in some semi-random order determined by LaTeX.
+#+latex_header: \usepackage[defernumbers=true,style=numeric,sorting=ydnt]{biblatex}
+# #+latex_header: \addbibresource{mangkoran-pubs.bib}
+# #+latex_header: \addbibresource{mangkoran-patents.bib}
+#+latex_header: \defbibheading{cvbibsection}[\bibname]{\cvsubsection{#1}}
+
+# Some font and separator redefinitions for the AwesomeCV class
+#+latex_header: \renewcommand{\acvHeaderSocialSep}{\enskip\cdotp\enskip}
+#+latex_header: \renewcommand{\acvHeaderIconSep}{~}
+# #+latex_header: \renewcommand*{\bodyfontlight}{\sourcesanspro}
+#+latex_header: \renewcommand*{\bibfont}{\paragraphstyle}
+#+latex_header: \renewcommand*{\entrylocationstyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\slshape\color{awesome} #1}}
+#+latex_header: \renewcommand*{\subsectionstyle}{\entrytitlestyle}
+#+latex_header: \renewcommand*{\headerquotestyle}[1]{{\fontsize{8pt}{1em}\bodyfont #1}}
+:END:
+
+#+TITLE: Site Reliability Engineer - CI/CD Pipeline Engineer
+#+AUTHOR: Afiq Nazrie Rabbani
+#+EMAIL: afnazrie@gmail.com
+
+# #+ADDRESS: Bandung, Indonesia
+# #+MOBILE: (+62) 82100000000
+#+HOMEPAGE: site.mangkoran.com
+#+GITHUB: mangkoran
+#+GITLAB: notmangkoran
+#+LINKEDIN: mangkoran
+
+#+latex: \begin{cvparagraph}
+I am an undergraduate currently studying Computer Network and Security. I am highly interested in the field of DevOps Engineering and Cloud Native Computing . I have experience working with remote teams in an organization projects. I posses a strong combination of team working, problem solving, technical skills, and curiosity with good communication abilities.
+
+#+latex: \end{cvparagraph}
+* Key skills
+:PROPERTIES:
+:CV_ENV:   cvskills
+:END:
+
+- Systems and Development :: Unix/Linux systems engineering and administration, software development, configuration management, CI/CD pipeline development.
+- Cloud Native Computing :: AWS and GCP architecture and infrastructure development, Kubernetes administration and monitoring.
+- Programming Languages and Libraries :: Golang, Rust, C/C++, JavaScript/TypeScript (React, Next.js, Express, Node), Elisp
+
+* Experience
+:PROPERTIES:
+:CV_ENV:   cventries
+:END:
+
+** [[https://accelbyte.io/][AccelByte]]
+:PROPERTIES:
+:CV_ENV: cvemployer
+:FROM:     <2022-08-16>
+:TO:     <2023-02-15>
+:LOCATION: Indonesia
+:END:
+
+*** Junior Site Reliability Engineer Intern - LiveOps
+:PROPERTIES:
+:CV_ENV:   cvsubentry
+:FROM:     <2022-08-16>
+:TO:     <2023-02-15>
+:END:
+
+- Troubleshooted and resolved technical issues in real-time.
+- Supported the deployment and testing of new releases and updates.
+- Participated in incident post-mortems and continuous improvement activities.
+- Participated in on-call rotation and became available for off-hours support as needed.
+- Monitored and maintained the performance and availability of live systems and services.
+- Managed incidents and escalations, including communication with internal stakeholders.
+
+* Education
+:PROPERTIES:
+:CV_ENV:   cventries
+:END:
+
+** Bachelor of Computer Science, Universiti Teknologi Malaysia
+:PROPERTIES:
+:CV_ENV:   cvschool
+:LOCATION: Malaysia
+:SCHOOL: Computer Network and Security
+:FROM: <2019-09-01 Sun>
+:END:
+
+- CGPA: 3.86
+- Dean's List: Semester 1-7
+
+* Languages
+:PROPERTIES:
+:CV_ENV:   cvskills
+:END:
+
+- Bahasa Indonesia :: Native
+- English :: Good proficiency (IELTS band 7.0)
+- Bahasa Melayu :: Modest proficiency
+
+* Export command :noexport:
+# just C-c C-c after src block
+#+begin_src elisp :results silent
+(org-export-to-file 'awesomecv "src/mangkoran-resume.tex")
+#+end_src
+
+* Local Variables :noexport:
+# Local Variables:
+# eval: (add-hook 'after-save-hook (lambda () (org-export-to-file 'awesomecv "src/mangkoran-resume.tex")) :append :local)
+# End:
